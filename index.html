@@ -28,13 +28,10 @@
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
                 
-                // Parse the response body as JSON
                 const data = await response.json();
-                
-                // Log the retrieved data to the console
                 console.log(data);
+                
             } catch (error) {
-                // Log any errors that occur during the fetch
                 console.error('Error fetching data:', error);
             }
         };
