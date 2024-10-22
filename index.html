@@ -31,7 +31,7 @@
                 }
                 
                 const data = await response.json();
-                document.getElementById('testData').innerHTML = data;
+                document.getElementById('testData').innerHTML = JSON.stringify(data);
                 
                 console.log(data);
                 
@@ -39,6 +39,8 @@
                 console.error('Error fetching data:', error);
             }
         };
+
+        fetchData(getUsersUrl);
     </script>
 </body>
 </html>
