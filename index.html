@@ -31,7 +31,7 @@
                 }
                 
                 const data = await response.json();
-                const testData = document.getElementById('testData').innerHTML(data);
+                document.getElementById('testData').innerHTML = data;
                 
                 console.log(data);
                 
